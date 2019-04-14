@@ -17,10 +17,10 @@ io.on('connection', socket => {
     })
 });
 
-const mongoDBLoguin = process.env.MONGOLOGIN;
+const mongoDBLogin = process.env.MONGOLOGIN;
 const mongoDBPass = process.env.MONGOPASS;
 
-mongoose.connect(`mongodb+srv://${MONGOLOGIN}:${MONGOPASS}@omnistack-eimhg.mongodb.net/omnistack?retryWrites=true`, {
+mongoose.connect(`mongodb+srv://${mongoDBLogin}:${mongoDBPass}@omnistack-eimhg.mongodb.net/omnistack?retryWrites=true`, {
         useNewUrlParser: true, 
     });
 
