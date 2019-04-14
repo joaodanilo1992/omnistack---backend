@@ -9,7 +9,7 @@ const File = new mongoose.Schema({
 
 File.virtual('url').get(function() {
 
-    const url = process.env.url;
+    const url = process.env.URL;
 
     return `${url}/files/${encodeURIComponent(this.path)}`
 });
